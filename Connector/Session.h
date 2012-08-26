@@ -23,7 +23,7 @@ typedef struct SsList{
 
 } SsList;
 
-SsList* createSsList(void);
+SsList* CreateSsList(void);
 
 int Append(SsList* SList, struct sockaddr* sock_addr, int fd, time_t addTime, int isLoggedIn);
 

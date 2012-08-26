@@ -23,7 +23,7 @@ Session* createSession(void){
 	return temp;
 }
 
-SsList* createSsList(void){
+SsList* CreateSsList(void){
 	SsList* temp= (SsList*) malloc(sizeof(SsList));
 	temp->SsHead= NULL;
 	temp->Append= Append;
