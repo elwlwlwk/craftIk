@@ -45,6 +45,10 @@ typedef struct players{
 	double abs_z_pos;
 	double stance;
 	bool on_ground;
+
+	float yaw;
+	float pitch;
+
 	//TODO:add necessary variable
 } players;
 

@@ -5,7 +5,7 @@ bool alive_tick_cool(){
 	return true;
 }
 
-players* getThisPlayer(){//TODO
+players* getThisPlayer(int clnt_fd){//TODO
 	players* P= NULL;
 
 	return P;
@@ -63,3 +63,15 @@ int ucs_str_length(const char* str, int arr_size){
 void send_keep_alive(share* shared, craftIk_epoll* clnt_epoll, int clnt_num){
 //		
 }
+
+void detect_illegal_stance(share* shared, craftIk_epoll* clnt_epoll, int clnt_num, double new_y_pos, double new_stance){
+	if((new_stance- new_y_pos< 0.1)|| (new_stance- new_y_pos> 1.65)){
+		kick_player(shared, clnt_epoll, clnt_num, "Illegal Stance");
+	}
+}
+
+void kick_player(share* shared, craftIk_epoll* clnt_epoll, int clnt_num, char* message){
+//TODO
+
+}
+

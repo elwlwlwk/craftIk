@@ -1,4 +1,5 @@
 #include "worker_procs.h"
+#include "packet.h"
 
 void add_clnt(share* shared, craftIk_epoll* clnt_epoll){
 	struct sockaddr_in clnt_addr;
